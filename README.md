@@ -1,43 +1,7 @@
-# Create React Express App
+The New York Times Article Saver application featured on this page is built in two different versions: a Mongo Database Scraper and a React Application.  Both sites accomplish the goal of finding articles from the New York Times and give users the ability to save articles to a mongo database.  Zachary Saltzman was responsible for all aspects of these applications.
 
-## About This Boilerplate
+Technologies Used: MongoDB, Express, React, Node as well as Javascript, HTML, CSS, Bootstrap
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+Description:
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
-
-## Starting the app locally
-
-Start by installing front and backend dependencies. While in this directory, run the following commands:
-
-```
-yarn install
-cd client
-yarn install
-cd ..
-``
-
-After both installations complete, run the following command in your terminal:
-
-```
-yarn start
-```
-
-That's it, your app should be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
-
-## Deployment (Heroku)
-
-After confirming that you have an up to date git repository and a Heroku app created, complete the following:
-
-1. Build the React app for production by running the following command:
-
-```
-yarn build
-```
-> Note: A yarn build will be required to register any new Post requests from any front-end JavaScript to to prevent any proxy server errors.
-
-2. Add and commit all changes to git
-
-3. Push to Heroku
-
-If all previous steps were followed correctly, your application should be deployed to Heroku!
+The (React JS) New York Times Article Scrubber utilizes the New York Times API to allow users to search through archived articles matching their search criteria (topic, start year, and end year).  From there, users are able to either view the article or save the article to their "saved articles" in the mongo database.  On the "saved articles" page, users have the option to delete saved articles.  The entire application is done with component rendering via React.
